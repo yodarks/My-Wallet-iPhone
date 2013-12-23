@@ -1095,11 +1095,11 @@ AppDelegate * app;
     
     receiveViewController.wallet = wallet;
     
-    [tabViewController setActiveViewController:receiveViewController animated:TRUE index:1];
+    [tabViewController setActiveViewController:receiveViewController animated:FALSE index:1];
 }
 
 -(IBAction)transactionsClicked:(UIButton *)sender {
-    [tabViewController setActiveViewController:transactionsViewController animated:TRUE index:0];
+    [tabViewController setActiveViewController:transactionsViewController animated:FALSE index:0];
 }
 
 -(void)showSendCoins {
@@ -1112,7 +1112,7 @@ AppDelegate * app;
     
     sendViewController.wallet = wallet;
     
-    [tabViewController setActiveViewController:sendViewController  animated:TRUE index:2];
+    [tabViewController setActiveViewController:sendViewController  animated:FALSE index:2];
 }
 
 -(IBAction)sendCoinsClicked:(UIButton *)sender {
@@ -1126,7 +1126,7 @@ AppDelegate * app;
         [accountViewController viewDidLoad];
     }
     
-    [tabViewController setActiveViewController:accountViewController animated:TRUE index:3];
+    [tabViewController setActiveViewController:accountViewController animated:FALSE index:3];
 }
 
 -(NSString*)password {
